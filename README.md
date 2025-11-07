@@ -1,29 +1,25 @@
 🗂️ Smart Waste Management System
 
-A real-time Streamlit dashboard for monitoring and optimizing urban waste collection using IoT-enabled smart bins, AI analytics, and interactive data visualization.
+A real-time Streamlit dashboard that monitors, analyzes, and optimizes urban waste collection using IoT-enabled smart bins, AI analytics, and interactive data visualization.
 
 🚀 Overview
 
-This project simulates a city-wide smart waste monitoring system that tracks bin fill levels, waste categories, and route efficiency. It provides actionable insights to enhance collection efficiency, reduce overflow, and support sustainability through intelligent data analysis.
+This project simulates a city-wide smart waste monitoring system. It continuously tracks bin fill levels, waste categories, and collection routes. Using data visualization and AI-based insights, it improves collection efficiency, prevents bin overflow, and supports sustainable waste management practices.
 
 ✨ Key Features
 
-🗺️ Live Map – Interactive Folium map showing real-time bin locations and statuses.
-
-📊 Analytics Dashboard – Bar and pie charts for fill levels, waste composition, and trends.
-
-🚛 Route Optimization – Visual comparison of collection routes by distance, time, and efficiency.
-
-🔬 AI Classification – Simulated accuracy and confidence tracking for waste recognition.
-
-⚙️ System Management – Status monitoring, alert configuration, and deployment progress.
+🗺️ Live Map – Interactive map displaying all smart bins with real-time status indicators.
+📊 Analytics Dashboard – Visual charts for fill levels, waste types, and performance metrics.
+🚛 Route Optimization – Displays optimal garbage collection routes by distance and time.
+🔬 AI Classification – Simulated waste recognition with accuracy and confidence metrics.
+⚙️ System Management – Health monitoring, alert configuration, and deployment progress tracking.
 
 🧠 Tech Stack
 
 Frontend: Streamlit
 Visualization: Plotly, Folium
 Backend: Python (Pandas, NumPy, datetime, random)
-Integration: streamlit-folium for maps
+Integration: streamlit-folium
 
 🏗️ Folder Structure
 smart-waste-management/
@@ -32,20 +28,23 @@ smart-waste-management/
 └── README.md
 
 ⚙️ Installation & Setup
-# Clone repository
+
+Step 1 – Clone the Repository
+
 git clone https://github.com/your-username/smart-waste-management.git
 cd smart-waste-management
 
-# Create and activate virtual environment (optional)
+
+Step 2 – Create a Virtual Environment (Optional)
+
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
-# Install dependencies
-pip install -r requirements.txt
 
-# Run the app
-streamlit run app.py
+Step 3 – Install Dependencies
+
+pip install -r requirements.txt
 
 
 requirements.txt
@@ -58,34 +57,38 @@ streamlit-folium
 numpy
 
 
-Then open 👉 http://localhost:8501
+Step 4 – Run the Application
 
-📈 Metrics Tracked
-Metric	Description
-Total Smart Bins	Monitored IoT bins
-Avg Fill Level	Mean bin fill percentage
-Daily Waste	Estimated city waste (kg)
-Collection Efficiency	Route effectiveness (%)
-Critical Bins	Overflow alert (>85%)
-🔮 Future Enhancements
+streamlit run app.py
 
-Real IoT sensor integration
 
-ML-based waste classification
+Then open in your browser 👉 http://localhost:8501
 
-Predictive overflow alerts
+| Metric                | Description                                          |
+| --------------------- | ---------------------------------------------------- |
+| Total Smart Bins      | Total number of bins monitored                       |
+| Avg Fill Level        | Mean bin fill percentage                             |
+| Daily Waste           | Total waste collected daily (kg)                     |
+| Collection Efficiency | Effectiveness of collection routes (%)               |
+| Critical Bins         | Bins above 85% fill level requiring immediate pickup |
 
-Cloud data storage (MongoDB/Firebase)
 
-Mobile dashboard for field agents
+✅ Integration with real IoT sensor data
+✅ Deployment of ML-based waste classification models
+✅ Implementation of predictive overflow alerts
+✅ Integration with cloud databases (MongoDB/Firebase)
+✅ Launch of mobile dashboard for field operators
 
 👨‍💻 Author
 
 Naveen Reddy
 B.Tech CSE (Data Science)
-📧 naveenreddynavee999@gmail.com
+
+📧 Email: naveenreddynavee999@gmail.com
+
 
 🪪 License
 
 Licensed under the MIT License.
-Use, modify, and distribute freely with attribution.
+
+Feel free to use, modify, and distribute with proper credit.
